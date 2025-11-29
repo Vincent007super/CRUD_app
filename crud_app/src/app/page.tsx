@@ -1,6 +1,10 @@
+"use client";
 import Header from "@/components/Header"
 
 export default function Home() {
+  const handleSignup = () => {
+    window.location.href = "/signup";
+  }
   return (
     <>
       <Header />
@@ -20,7 +24,7 @@ export default function Home() {
           <div className="w-8/12 flex h-6/20 flex-col justify-center items-center gap-4">
             <h1 className="font-bold text-8xl">Hey, you!</h1>
             <h3 className="font-bold text-3xl">Are you tired of Procrastinating and feeling like you are worthless because you didn't do anything?</h3>
-            <h1 className="font-bold text-6xl mt-12"> We are too</h1>
+            <h1 className="font-bold text-6xl mt-12"> We are too, and we have a solution</h1>
           </div>
           <div className="w-8/12 flex h-6/20">
             <h3 className="font-bold text-2xl">But first, the numbers </h3>
@@ -30,9 +34,9 @@ export default function Home() {
             <h3 className="font-bold text-2xl">Ok, so there is nothing we can do? Wrong!</h3>
             {/* Content on how to combat procrastination using APA */}
           </div>
-          <div className="w-8/12 flex h-6/20">
+          <div className="w-8/12 flex h-6/20 flex flex-col justify-center items-center gap-4">
             <h3 className="font-bold text-2xl">Ready to get started? Sign up now!</h3>
-            {/* Call to action to sign up */}
+            <button className="bg-white text-black font-bold px-6 py-3 rounded-lg mt-4 hover:bg-gray-300" onClick={handleSignup}>Sign Up today!</button>
           </div>
         </div>
 
