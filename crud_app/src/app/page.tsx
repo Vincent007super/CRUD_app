@@ -16,17 +16,26 @@ export default function Home() {
           <h1 className="text-white font-bold z-3 text-5xl w-6/12"> Welcome to the <br /> Anti Procrastinator App (APA)</h1>
           <h1 className="text-white font-bold z-3 text-2xl text-right w-5/12"> What will you do today?</h1>
         </div>
-        <div className="w-screen bg-black h-[1600px] z-5 relative mt-[-200px] flex flex-col gap-6 justify-center">
-          <div className="w-8/12 flex h-6/20">
-
+        <div className="w-screen bg-black h-[1600px] z-5 relative mt-[20px] flex flex-col gap-6 justify-center items-center">
+          <div className="w-8/12 flex h-6/20 flex-col justify-center items-center gap-4">
+            <h1 className="font-bold text-8xl">Hey, you!</h1>
+            <h3 className="font-bold text-3xl">Are you tired of Procrastinating and feeling like you are worthless because you didn't do anything?</h3>
+            <h1 className="font-bold text-6xl mt-12"> We are too</h1>
           </div>
           <div className="w-8/12 flex h-6/20">
-
+            <h3 className="font-bold text-2xl">But first, the numbers </h3>
+            {/* Content on procrastination statistics */}
           </div>
           <div className="w-8/12 flex h-6/20">
-
+            <h3 className="font-bold text-2xl">Ok, so there is nothing we can do? Wrong!</h3>
+            {/* Content on how to combat procrastination using APA */}
+          </div>
+          <div className="w-8/12 flex h-6/20">
+            <h3 className="font-bold text-2xl">Ready to get started? Sign up now!</h3>
+            {/* Call to action to sign up */}
           </div>
         </div>
+
       </main>
     </>
   );
