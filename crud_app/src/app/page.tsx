@@ -1,5 +1,6 @@
 "use client";
 import Header from "@/components/Header"
+import { ProcStats } from "@/components/Charts";
 
 export default function Home() {
   const handleSignup = () => {
@@ -28,7 +29,8 @@ export default function Home() {
           </div>
           <div className="w-8/12 flex h-6/20">
             <h3 className="font-bold text-2xl">But first, the numbers </h3>
-            {/* Content on procrastination statistics */}
+            <div className="w-12" />
+            <ProcStats />
           </div>
           <div className="w-8/12 flex h-6/20">
             <h3 className="font-bold text-2xl">Ok, so there is nothing we can do? Wrong!</h3>
